@@ -3,23 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Calculadora Básica</title>
+  <title>Perfil Personal</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="calculadora">
-    <h1>Calculadora</h1>
-    <input type="number" id="num1" placeholder="Número 1" />
-    <input type="number" id="num2" placeholder="Número 2" />
+  <div class="container">
+    <header>
+      <h1>Steven Martínez</h1>
+      <img src="https://via.placeholder.com/150" alt="Foto de perfil" class="perfil-img" />
+    </header>
+    
+    <section class="info">
+      <h2>Información Personal</h2>
+      <p><strong>Edad:</strong> 30 años</p>
+      <p><strong>Ciudad:</strong> Medellín, Colombia</p>
+      <p>Soy estudiante de Derecho e Ingeniería de Software. Trabajo como empleado y emprendo en el marketing de afiliados.</p>
+    </section>
 
-    <div class="botones">
-      <button onclick="calcular('+')">+</button>
-      <button onclick="calcular('-')">-</button>
-      <button onclick="calcular('*')">*</button>
-      <button onclick="calcular('/')">/</button>
-    </div>
+    <section class="extra">
+      <h3>Hobbies, habilidades e intereses:</h3>
+      <ul>
+        <li>Jugar Microfutbol</li>
+        <li>Marketing digital y Hotmart</li>
+        <li>Desarrollo personal</li>
+        <li>Programación</li>
+      </ul>
+    </section>
 
-    <div id="resultado"></div>
+    <button onclick="cambiarTema()">Cambiar tema</button>
   </div>
 
   <script src="script.js"></script>
